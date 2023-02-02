@@ -45,4 +45,6 @@ streamlit.dataframe(my_data_row)
 #streamlit.text("The fruit load list contains:")
 #streamlit.text(my_data_row)
 added_fruit = streamlit.text_input("What fruit would you like to add?","jackfruit")
+streamlit.write('Thanks for adding ', added_fruit)
+my_vur.execute("insert into fruit_load_list values ('from streamlit')")
 
